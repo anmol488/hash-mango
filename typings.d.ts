@@ -4,6 +4,7 @@ export interface Genre {
 }
   
 export interface Movie {
+    length: number
     title: string
     backdrop_path: string
     media_type?: string

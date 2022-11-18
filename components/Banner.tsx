@@ -6,7 +6,7 @@ import { FaPlay } from 'react-icons/fa'
 import { InformationCircleIcon } from '@heroicons/react/solid'
 
 interface Props {
-  netflixOriginals: Movie
+  netflixOriginals: any
 }
 
 function Banner({ netflixOriginals }: Props) {
