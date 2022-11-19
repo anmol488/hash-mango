@@ -1,9 +1,5 @@
 # Welcome to HashMango
 
-## Project Details
-
-Open-source website to view trending movies/tv shows updated every month automatically by a custom AI model created by me
-
 ## Tech Stack Used
 
 - Next.js
