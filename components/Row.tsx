@@ -6,7 +6,6 @@ import Thumbnail from "./Thumbnail"
 interface Props {
     title: string
     movies: Movie[]
-    // movie: Movie | DocumentData[]
 }
 
 function Row({ title, movies }: Props) {

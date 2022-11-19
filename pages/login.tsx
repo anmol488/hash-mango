@@ -25,7 +25,7 @@ export default function Login() {
   return (
     <div className="relative flex h-screen w-screen flex-col bg-black md:items-center md:justify-center md:bg-transparent">
         <Head>
-            <title>HashMango</title>
+            <title>Sign In - HashMango</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Image

@@ -1,4 +1,3 @@
-import { PlusIcon } from "@heroicons/react/outline"
 import { XIcon } from "@heroicons/react/solid"
 import MuiModal from "@mui/material/Modal"
 import { useEffect, useState } from "react"
@@ -56,14 +55,6 @@ function Modal() {
                     style={{ position: 'absolute', top: '0', left: '0' }}
                     playing
                 />
-                <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
-                    <div className="flex space-x-2 items-center">
-                        <button className="modalButton">
-                            <PlusIcon className="h-7 w-7" />
-                        </button>
-                        <p className="font-semibold">Add to My List</p>
-                    </div>
-                </div>
             </div>
             <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
                 <div className="space-y-6 text-lg">
