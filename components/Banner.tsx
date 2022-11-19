@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { baseUrl } from '../constants/movie'
 import { Movie } from '../typings'
-import { FaPlay } from 'react-icons/fa'
 import { InformationCircleIcon } from '@heroicons/react/solid'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../atoms/modalAtom'
@@ -39,9 +38,6 @@ function Banner({ netflixOriginals }: Props) {
           {movie?.overview}
         </p>
         <div className="flex space-x-3">
-          <button className="bannerButton bg-white text-black">
-            <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7"/> Play
-          </button>
           <button 
             className="bannerButton bg-[gray]/70"
             onClick={() => {

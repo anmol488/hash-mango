@@ -1,8 +1,7 @@
-import { PlusIcon, ThumbUpIcon, VolumeOffIcon, VolumeUpIcon } from "@heroicons/react/outline"
+import { PlusIcon } from "@heroicons/react/outline"
 import { XIcon } from "@heroicons/react/solid"
 import MuiModal from "@mui/material/Modal"
 import { useEffect, useState } from "react"
-import { FaPlay } from "react-icons/fa"
 import ReactPlayer from "react-player/lazy"
 import { useRecoilState } from "recoil"
 import { modalState, movieState } from "../atoms/modalAtom"
@@ -58,25 +57,12 @@ function Modal() {
                     playing
                 />
                 <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
-                    <div className="flex space-x-2">
-                        <button className="flex items-center gap-x-2 rounded bg-white px-8 text-xl font-bold text-black transition hover:bg-[#e6e6e6]">
-                            <FaPlay className="h-7 w-7 text-black" />
-                            Play
-                        </button>
+                    <div className="flex space-x-2 items-center">
                         <button className="modalButton">
                             <PlusIcon className="h-7 w-7" />
                         </button>
-                        <button className="modalButton">
-                            <ThumbUpIcon className="h-7 w-7" />
-                        </button>
+                        <p className="font-semibold">Add to My List</p>
                     </div>
-                    <button className="modalButton" onClick={() => setMuted(!muted)}>
-                        {muted ? (
-                            <VolumeOffIcon className="h-6 w-6" />
-                        ) : (
-                            <VolumeUpIcon className="h-6 w-6" />
-                        )}
-                    </button>
                 </div>
             </div>
             <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
